@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+@font-face {
+    font-family:'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+:root{
+    --cor0: #CCFED6;
+    --cor1: #54FF76;
+    --cor5: #54ff7693;
+    --cor2: #9afaaf;
+    --cor3: #3b6e45;
+    --cor4: #0fb130;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android:'Android', cursive;
+
+}
+
+
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrão);
+}
+
+header {
+    background-image:linear-gradient(to bottom, #54FF76,#2A803B);
+    min-height: 25vh;
+    text-align: center;
+    
+}
+
+nav{
+    background-color:#2A803B;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.308);
+}
+
+nav > a {
+    color: white;
+    font-family: var(--fonte-padrão);
+    font-weight: 700;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor3) ;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+header > h1  {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    padding: 10px 10px;
+    font-size: 50px;
+    margin:auto;
+    text-shadow: 0px 0px 0.3em rgba(0, 0, 0, 0.527);
+}
+
+header > p {
+    color: white;
+    max-width: 500px;
+    padding: 0px 10px;
+    font-family: var(--fonte-padrão);
+    font-weight: bold;
+    font-size: 16px;
+    margin: auto;
+    text-shadow: 2px 2px 1.0em rgba(0, 0, 0, 0.527);
+}
+
+main {
+    background-color: white;
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 1px 1px 1.5em rgba(0, 0, 0, 0.466);
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+}
+
+main h1 {
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    color: var(--cor3);
+    font-size: 1.9em;
+}
+
+main p {
+    font-family: var(--fonte-padrão);
+    font-size: 1.09em;
+    line-height: 1.4em;
+    text-indent: 17px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+main p > strong {
+    background-color:var(--cor1) ;
+    border-radius: 5px;
+    padding: 1px 5px;
+    color: var(--cor3);
+    
+}
+
+main a{
+    text-decoration: none;
+    background-color: var(--cor4);
+    padding: 2px 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.externo::after{
+        content:'\00A0\🔗';
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #24412a;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+    padding: 2px;
+    color: black;
+    font-family: var(--fonte-android);
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+main img {
+    width: 100%;
+    margin: auto;
+}
+
+.bugdroid{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.containervideo{
+    background-color: var(--cor3);
+    padding:10px;
+    padding-bottom: 57.5%;
+    margin: 0px -20px 20px -20px;
+    position: relative;
+}
+
+.video{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor2);
+    padding: 5px;
+    max-width: 1000px;
+    max-height: 1000px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.568);
+}
+
+aside h3{
+    background-color:var(--cor3);
+    margin: -5px -5px 0 -5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    color: rgb(247, 247, 247);
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+aside p{
+    font-size: 1.0em;
+    font-family: var(--fonte-padrão);
+    font-weight: normal;
+}
+
+aside ul{
+    columns: 2;
+}
+
+aside li{
+    list-style-position: inside;
+    list-style-type: '\00A0\🗸\00A0';
+}
+
+aside li > abbr{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--cor3);
+    margin-top: 10px;
+    height: 25px;
+
+}
+
+footer p{
+    color: white;
+    padding-top: 4px;
+    text-align: center;
+    font-family: var(--fonte-padrão);
+    font-size: 17px;
+    font-weight: normal;
+}
+footer a{
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    transition: 1s
+}
